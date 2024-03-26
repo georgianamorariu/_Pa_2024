@@ -44,7 +44,6 @@ public class Main {
             int age = random.nextInt(20) + 15;
             people.add(new Passenger(name, age, null));
         }
-
         return people;
     }
 }
