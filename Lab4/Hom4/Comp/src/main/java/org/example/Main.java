@@ -38,7 +38,7 @@ public class Main {
         for (int i = 0; i < 2; i++) {
             String name = faker.name().firstName();
             int age = faker.number().numberBetween(20, 70);
-            String destination = faker.address().city(); // Generate random destination
+            String destination = faker.country().capital(); // Generate random destination
             people.add(new Driver(name, age, destination));
         }
 
@@ -46,7 +46,7 @@ public class Main {
         for (int i = 0; i < 2; i++) {
             String name = faker.name().firstName();
             int age = faker.number().numberBetween(15, 35);
-            String destination = faker.address().city(); // Generate random destination
+            String destination = faker.country().capital(); // Generate random destination
             people.add(new Passenger(name, age, destination));
         }
 
